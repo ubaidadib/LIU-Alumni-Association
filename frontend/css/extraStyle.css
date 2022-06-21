@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 75px;
+    border: 3px solid #f1f1f1;
+    z-index: 8;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1; 
+}
+#loading
+{
+    text-align:center; 
+    background: url('../senior/loader.gif') no-repeat center; 
+    height: 150px;
+} 
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.cover-page {
+    z-index: 1;
+    min-height: 350px;
+    display: flex;
+    background-color:  linear-gradient(rgba(1, 1, 12, 0.1), rgba(1, 1, 12, 0.1)),url(../backend/image/uploadedProfiles\) no-repeat scroll center center;
+        background-size: cover; }
+
+.cover-btn {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -050%);
+    background-color: #555;
+    color: white;
+    font-size: 14px;
+    padding:10px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cover-btn:hover {
+    background-color: black;
+    color: white;
+}
+.home_banner_area {
+    z-index: 1;
+    min-height: 500px;
+    display: flex;
+    background: linear-gradient(rgba(1, 1, 12, 0.1), rgba(1, 1, 12, 0.1)), url(../frontend/images/background.jpg) no-repeat scroll center center;
+    background-size: cover; }
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "|";
+}
+
+.like_panel .active-like{
+    color: #007bff!important;
+}
+
